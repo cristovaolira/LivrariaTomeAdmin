@@ -1,0 +1,493 @@
+/* GERAL */
+
+/* Container principal */
+
+#box{
+    height: 100%;
+    width: 100%;
+    }
+
+body{
+    background-color: #E8E8E8;   
+ }
+
+body#pagina_de_edicao{
+    font-family: Oxygen, Arial;
+}
+
+header{
+    background-color: orange;
+    text-align: center;
+    font-family: Oxygen, Arial;
+    padding: 15px;
+}
+
+header img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 30em;
+    
+    
+}
+
+h1, h2, h3{
+    font-family: Oxygen, Arial;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #4d4d4d;
+    padding: 15px;
+    color: #f1f1f1;
+    font-family: Oxygen, Arial;
+    text-align: center;
+}
+
+
+/* FIM GERAL */
+
+/* Menu */
+
+nav.navegacao{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E8E8E8;
+}
+ul.navegacao{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    list-style: none;
+    margin-top: 4px;;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+}
+a.navegacao{
+    position: relative;
+    display: inline-block;
+    padding: 0.7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0;
+    font-family: Oxygen, Arial;
+    text-decoration: none;
+    color: #4d4d4d; 
+    font-weight: 700;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 11pt;
+}
+a.navegacao:hover{
+    color: #f1f1f1;
+    background: #4d4d4d;
+    transition-duration: 0.3s;
+}
+
+@media all end (max-width : 800px){
+    ul{
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+}
+
+@media all end (max-width: 600px){
+    ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+/* Página index.html */
+
+session.pagina-index h1{
+    text-align: center;
+    color: #4d4d4d;
+    font-family: Oxygen, Arial;
+    margin-top: 3.7em;
+    margin-bottom: 2.4em;
+    font-size: 30pt;
+        
+}
+        
+
+button.pagina-index{
+    width: 100%;
+    height: 70px;
+    font-size: 2.2em;
+    font-family: Oxygen, Arial;
+    font-weight: 700;
+    background-color: darkcyan;
+    color: #f1f1f1;
+    margin-top: 3em;
+    }
+button.pagina-index:hover{
+    background-color: darkslategray;
+}
+
+/* Campo de Pesquisa */
+
+div.campopesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+}
+
+@media all end (max-width: 800px){
+    input{
+        justify-content: center;
+    }
+}
+div.campopesquisa{
+    margin-right: 1em;
+    margin-left: 13em;
+    padding-top: 0.1em;
+}
+form input#pesquise{
+    height: 30px;
+    width: 250px;
+    border: 0.4px solid silver;
+    border-radius: 3px;
+    font-weight: 700;
+    font-family: Oxygen, Arial;
+    font-size: 12pt;
+    box-shadow: 2px 2px 5px silver;
+    padding-left: 4px;
+}
+form input#ok{
+    height: 33px;
+    border: 0.4px solid silver;
+    border-radius: 3px;
+    background-color: orange;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-family: Oxygen, Arial;
+    font-size: 12pt;
+     box-shadow: 2px 2px 5px silver;
+}
+form input#ok:hover{
+    background-color: dimgrey;
+}
+
+/* Título das Páginas */
+
+h1.tituloDePagina{
+    color: #f1f1f1;
+    padding: 10px;
+    padding-left: 27px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2px;
+    
+}
+
+/*Sub Titulos de Páginas */
+
+h2.subtituloDePagina{
+    color: #4d4d4d;
+    font-family: Oxygen, Arial;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+/* div Total de Registros */
+
+session.totalregistros p{
+    color: #4d4d4d;
+    font-family: Oxygen, Arial;
+    font-size: 12pt;
+    font-weight: 700;
+    margin-left: 27px;
+}
+
+/* Botões Crud */
+
+session.botoesCrud{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 27px;
+}
+session.botoesCrud button{
+    margin: 0.1em;
+    font-size: 14pt;
+    background-color: orange;
+    color: #f1f1f1;
+    border: 0.4px solid silver;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+session.botoesCrud button:hover{
+    background-color: dimgrey;
+    transition-duration: 0.3s;
+
+}
+session.botoesCrud button#botaoDestaque{
+    background-color: darkcyan;
+    margin-left: 1005px;
+}
+session.botoesCrud button#botaoDestaque:hover{
+    background-color: dimgrey;  
+    transition-duration: 0.3s;
+}
+div#botaoCancelarFormularios input{
+    margin-top: -55px;
+    margin-left: 1165px;
+}
+
+/* Formulários de Cadastro e Edição */
+
+session.formularios form{
+   
+    width: 100%;
+    max-width: 40em;
+    margin-top: 2em;
+    margin-bottom: 2em;   
+}
+
+session.formularios input{
+    height: 25px;
+    border: 0.5px solid silver;
+    border-radius: 5px;
+    font-family: Oxygen, Arial;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-left: 4px;
+    
+}
+
+div#botoesDeFormulario input{
+    
+    height: 35px;
+    font-family: Oxygen, Arial;
+    font-weight: 700;
+    color: #4d4d4d;
+    margin: 0px;
+}
+div#botoesDeFormulario input#enviar_dados{
+    color: #f1f1f1;
+    background-color: darkcyan
+}
+div#botoesDeFormulario input:hover{
+    background-color: dimgrey;
+    transition-duration: 0.3s;
+    color: #f1f1f1;
+}
+div#botoesDeFormulario input#enviar_dados:hover{
+    background-color: dimgrey;
+    transition-duration: 0.3s;
+    color: #f1f1f1;
+}
+    
+/* Tabelas */
+
+
+  /* Table Base */
+
+  table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Oxygen, Arial;
+    margin-top: 1em;
+      
+  }
+
+  .table {
+    border-bottom: silver solid 0.5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .table th,
+  .table td {
+    border-right: silver solid 0.5px;
+    font-size: 12px;
+    padding: 8px;
+    line-height: 20px;
+    text-align: center;
+    font-family: Oxygen, Arial;
+    vertical-align: middle;
+    border-radius: 3px;
+  }
+
+  .table td:last-child {
+     border-right: 0;
+  }
+
+  .table thead th {
+    font-weight: normal;
+    background-color: darkcyan;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-family: Oxygen, Arial;
+    font-size: 15px;
+    border: 0.5px solid silver;
+  }
+
+  .table tbody > tr:nth-child(odd) > td,
+  .table tbody > tr:nth-child(odd) > th {
+    background-color: #f8f8f8;
+  }
+
+
+/* Small Sizes */
+@media (max-width: 767px) { 
+  
+  /* Responsive Table */
+  .table-responsive {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
+  }
+  .table-responsive td,
+  .table-responsive th {
+    height: 35px;
+  }
+
+  .table-responsive thead {
+    float: left;
+  }
+
+  .table-responsive tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  .table-responsive tbody tr {
+    display: inline-block;
+  }
+
+  
+  .table td:last-child {
+     border-right: silver solid 0.5px;
+  }
+
+
+}
+
+/* Paginação */
+
+nav.paginacao ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav.paginacao a{
+    color: #4d4d4d;
+    font-family: Oxygen, Arial;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav.paginacao li{
+    border: 0.5px solid silver;
+    width: 2%;
+    height: 2%;
+    margin: 5px;
+    
+}
+nav.paginacao li:hover{
+    background-color: darkcyan;
+    color: #f1f1f1;
+}
+nav.paginacao a:hover{
+    color: #f1f1f1;
+}
+/* Página inicio.html - Menu Principal */
+
+
+div.bemvindo{
+    background-color: darkcyan;
+    color: #f1f1f1;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+session#setores{
+   text-align: center;
+}
+
+session#setores hr{
+   width: auto;
+   max-width: 500px;
+   margin-bottom: 60px;
+   margin-top: -60px;
+   text-align: center;
+   border: 0.5px solid silver;
+  }
+
+session#setores img{
+    margin: -30px;
+}
+
+h3{
+    font-size: 25pt;
+    color: #4d4d4d;
+    margin-bottom: 60px;
+    
+}
+
+session#setores img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    max-width: 200px; 
+    
+}
+
+/* Páginas indica_alteracao....html / indica_apagar....html */
+
+session.edicaoRegistro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13em;
+}
+
+input.edicaoRegistro {
+    padding-left: 4px;
+    height: 30px;
+    width: 300px;
+    border-radius: 3px;
+    border: 0.4px solid silver;
+    box-shadow: 0px 0px 15px grey;
+    font-weight: 600;
+    font-family: Oxygen, Arial;
+    
+}
+#btnEditarform {
+    height: 33px;
+    border-radius: 3px;
+    border: 0.4px solid silver;
+    box-shadow: 0px 0px 15px grey;
+    background-color: darkcyan;
+    color: #f1f1f1;
+    font-weight: 600;
+    font-family: Oxygen, Arial;
+}
+
+
